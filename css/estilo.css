@@ -1,0 +1,59 @@
+@chaset "utf-8";
+*]{
+	font-family: verdana, arial, times new roman;
+}
+body{
+	background-color: #d2dae2;
+}
+.principal{
+	text-align: center;
+	text-shadow: 2px 2px 2px white, 3px 3px 2px black;
+	color: #353b48;
+	font-size: 1.5em;
+}
+#especial{
+	font-style: italic;
+}
+p{
+	text-align: justify;
+	text-indent: 20px;
+	line-height: 2;
+}
+
+/Habilitando o scroll deslizante/
+
+html{
+	scroll-behavior:smooth;
+}
+
+/Página Parágrafos.HTML/
+
+.esquerda{
+	text-aling:left;
+}
+
+.direita{
+	text-align:right;
+}
+
+.centro{
+	text-align:center;
+}
+
+.justificado{
+	text-align: justify;
+	border: 4px double navy;
+	background-color: rgba (0,0,0,0.5);
+	padding: 20px;
+	margin: 20px;
+	text-shadow: 1px 1px 1px silver;
+}
+
+/*Formatando a imagem de fundo */
+
+.fundo{
+	background-image: url(../img/fundo01.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment:fixed;
+}
