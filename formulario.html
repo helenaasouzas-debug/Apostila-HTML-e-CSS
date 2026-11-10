@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Apostila de HTML e CSS</title>
+		<meta name="author" content="Bruno">
+		<meta name="description" content="Página com HTML e CSS">
+		<meta name="keywords" content="HTML, CSS, JS, Imagens, Web">
+		<link rel="shortcut icon" href="img/icone.png">
+		<link rel="stylesheet" href="css/estilo.css">
+		
+	</head>
+	<body class="fundo">
+		<main class="geral">
+			<h1>Formulário</h1>
+			<p>Utilizamos formulários para interação do usuário dentro da página web.<br>
+			Exemplo: &lt;form method="post" name="dados" action="envia.php"></p>
+			<form method="post" name="form01" action="#">
+				<fieldset class="pessoais">
+					<legend>Dados Pessoais</legend>
+					<label>Nome: <span class="obriga">*</span>
+					<input type="text" name="txtnome" size="25" required>
+					</label><br>
+					<label>Data de Nascsimento:
+					<input type="date" name="dtnascimento">
+					</label><br>
+					<label>E-mail:
+					<input type="email" name="txtmail" size="25" required>&nbsp;&nbsp; Senha:
+					<input type="password" name="txtsenha" maxlength="7" required>
+					</label><br>
+					<label>Endereço:
+					<input type="text" name="txtendereco" size="30">&nbsp;&nbsp; Nº:
+					<input type="text" name="txtnumero" size="8"><br>
+					Cidade:
+					<input type="text" name="txtcidade" size="20">&nbsp;&nbsp; Estado:
+					<select name="selestado">
+						<option value="vazio">Selecione</option>
+						<option value="RS">RS</option>
+						<option value="SC">SC</option>
+						<option value="PR">PR</option>
+						<option value="SP">SP</option>
+					</select>
+					</label><br>
+					<label>Sexo:
+					<input type="radio" name="rdsexo" value="feminino">Feminino &nbsp;
+					<input type="radio" name="rdsexo" value="masculino">Masculino &nbsp;
+					<input type="radio" name="rdsexo" value="outro">Outro
+					</label><br>
+					<label> Assutos de Interesse: <br>
+					<input type = "chackbox" name = "ckinter" value = "tecnologia"> Tecnologia <br>
+					<input type = "chackbox" name = "ckinter" value = "esporte"> Esporte <br>
+					<input type = "chackbox" name = "ckinter" value = "musica"> Música <br>
+					<input type = "chackbox" name = "ckinter" value = "outros"> Outros <br>
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend> Dados Acadêmicos </legend>
+					<label> Escolaridade; <br>
+					<select name = "selescolaridade" size = "3" multiple>
+					<option value = "fundamental"> Fundamental </option>
+					<option value = "medio"> Médio </option>
+					<option value = "tecnico"> Técnico </option>
+					<option value = "graduacao"> Graduação </option>
+					<option value = "especializacao"> Especialização </option>
+					<option value = "mestrado"> Mestrado </option>
+					<option value = "doutorado"> Doutorado </option>
+					<select> <br>
+					Cursos: <br>
+					<textarea name = "txtcursos" rows = "10" cols = "90" placeholder = "Digite os cursos aqui."></textarea>
+			</form>
+		</main>
+	</body>
+</html>
